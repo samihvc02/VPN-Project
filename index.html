@@ -12,14 +12,34 @@
     <header class="header">
       <nav class="navbar">
         <div class="logo">NoLag<span>VPN</span></div>
-        <ul class="nav-links">
-          <li><a href="">Home</a></li>
-          <li><a href="">Features</a></li>
-          <li><a href="">Locations</a></li>
-          <li><a href="">Plans</a></li>
-        </ul>
-        <button class="nav-btn">Connect Now</button>
+        <input type="checkbox" id="menu-active" />
+        <label for="menu-active" class="hamburger">
+          <svg
+            class="menu-open"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+          <svg
+            class="menu-close"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </label>
       </nav>
+      <ul class="nav-menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href="">Locations</a></li>
+        <li><a href="">Plans</a></li>
+      </ul>
     </header>
 
     <!-- MAIN-->
