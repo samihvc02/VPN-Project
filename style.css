@@ -30,6 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
+  border-bottom: 2px solid rgb(255 255 255 / 0.2);
 }
 
 /* NAVBAR*/
@@ -151,8 +152,6 @@ body {
   color: var(--text-color);
   font-family: var(--font-family);
 
-  padding: 0 clamp(2.5rem, 6vw, 4rem);
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(600px, 100%), 1fr));
 }
@@ -160,22 +159,20 @@ body {
 .hero-content {
   height: auto;
   min-height: calc(100dvh - 50px);
+  padding-left: clamp(2.5rem, 6vw, 4rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: clamp(2.5rem, 6vw, 4rem);
+  gap: 4rem;
 }
 .hero-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: clamp(0.5rem, 6vw, 4rem);
 }
-.hero-tagline {
-  font-size: clamp(0.75rem, 2.5vw, 2rem);
-}
 .hero-tittle {
-  font-size: clamp(2.5rem, 10vw, 6rem);
+  font-size: clamp(4rem, 5vw, 7rem);
   text-shadow: 0 4px 50px rgb(0 0 0 / 0.3);
 
   & .tittle-span {
@@ -183,7 +180,7 @@ body {
   }
 }
 .hero-subtext {
-  font-size: clamp(1rem, 3vw, 1.75rem);
+  font-size: clamp(1rem, 2vw, 1.75rem);
   text-shadow: 0 4px 20px rgb(0 0 0 / 0.3);
 }
 
@@ -193,7 +190,7 @@ body {
   gap: 4rem;
 }
 .primary-CTA {
-  font-size: clamp(0.75rem, 3vw, 1.5rem);
+  font-size: clamp(0.75rem, 1.5vw, 1.5rem);
   background-color: var(--accent-color);
   font-weight: 700;
   letter-spacing: 0.05rem;
@@ -228,7 +225,8 @@ body {
   min-width: 100%;
 }
 .map-tittle {
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  padding: 0 clamp(2.5rem, 6vw, 4rem);
   & .map-span {
     color: var(--accent-color);
   }
@@ -255,7 +253,7 @@ body {
 .hero-map .map-svg .South-Africa,
 .hero-map .map-svg .United-Kingdom,
 .hero-map .map-svg .United-States {
-  fill: #c2318a;
+  fill: var(--accent-color);
   stroke: #452d9c;
   stroke-width: 3;
   stroke-linejoin: round;
@@ -268,5 +266,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+  }
+  .hero-content {
+    padding: 0 clamp(2.5rem, 6vw, 4rem);
   }
 }
