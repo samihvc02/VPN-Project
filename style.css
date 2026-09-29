@@ -172,7 +172,7 @@ body {
   gap: clamp(0.5rem, 6vw, 4rem);
 }
 .hero-tittle {
-  font-size: clamp(2.5rem, 5vw, 7rem);
+  font-size: clamp(1.5rem, 5vw, 7rem);
   text-shadow: 0 4px 50px rgb(0 0 0 / 0.3);
 
   & .tittle-span {
@@ -180,7 +180,7 @@ body {
   }
 }
 .hero-subtext {
-  font-size: clamp(1rem, 2vw, 1.75rem);
+  font-size: clamp(0.9rem, 2vw, 1.75rem);
   text-shadow: 0 4px 20px rgb(0 0 0 / 0.3);
 }
 
